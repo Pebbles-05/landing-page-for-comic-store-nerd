@@ -35,12 +35,12 @@ section {
 /* buttons for front */
 .btn {
   background-color: #ffff;
-  border-radius: 14px;
+  border-radius: 1rem;
   display: inline-block;
   cursor: pointer;
   color: #000000;
   font-size: 1rem;
-  padding: 12px 31px;
+  padding: 1% 4%;
 }
 .btn:hover {
   background-color: aqua;
@@ -48,11 +48,10 @@ section {
 
 /*  navbar */
 nav {
-  height: 30vh;
+  padding: 5% 10%;
   font-size: 1.5rem;
-  padding: 0 10%;
-  /* display: flex;
-  justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   z-index: 2;
 }
@@ -82,18 +81,24 @@ a {
   transition: all 0.3s ease;
 }
 /* for mobile nav */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   body {
     overflow-x: hidden;
+  }
+  .logo {
+    text-align: center;
+  }
+  .logo img {
+    width: 70%;
   }
 
   .nav_links {
     position: absolute;
     left: 0;
-    top: 20vh;
+    top: 6%;
     background-color: rgb(132, 0, 255);
-    height: 30%;
-    width: 30%;
+    height: 15%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -114,7 +119,7 @@ a {
 /* navlinks animation */
 
 .nav_active {
-  transform: translateX(30%);
+  transform: translateX(25%);
 }
 
 /* animation for links */
@@ -208,9 +213,12 @@ a {
 }
 
 /* media query for front for mobile */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   .item {
     width: 100%;
+  }
+  .front {
+    padding-bottom: 30%;
   }
 
   .text h1 {
@@ -225,14 +233,14 @@ a {
 
   .waves svg {
     width: calc(200% + 1.3px);
-    height: 200px;
+    height: 100px;
   }
 }
 
 /* second part */
 #second_part {
-  padding: 10% 10%;
   color: black;
+  padding: 10% 10%;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -296,14 +304,14 @@ a {
   list-style: none;
 }
 /* media queries for price section */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   #price {
     justify-content: space-around;
   }
 
   .c4 {
-    width: 60%;
-    margin: 10%;
+    width: 100%;
+    margin: 10% 0;
   }
 }
 
@@ -330,7 +338,7 @@ a {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  padding: 0 0 5%;
+  padding: 0 0 10%;
   width: 100%;
 }
 .faq_box {
