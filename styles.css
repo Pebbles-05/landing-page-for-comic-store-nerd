@@ -1,0 +1,382 @@
+/* mail html */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #edeef7;
+}
+/* premade class and variables */
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+section {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  position: relative;
+}
+
+/* top section */
+#first_part {
+  background: linear-gradient(
+    92.54deg,
+    #4282fe 0.59%,
+    #387bff 0.6%,
+    #618dff 51.62%,
+    #9bcfff 106.4%
+  );
+
+  color: #ffff;
+}
+
+/* buttons for front */
+.btn {
+  background-color: #ffff;
+  border-radius: 14px;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-size: 1rem;
+  padding: 12px 31px;
+}
+.btn:hover {
+  background-color: aqua;
+}
+
+/*  navbar */
+nav {
+  height: 30vh;
+  font-size: 1.5rem;
+  padding: 0 10%;
+  /* display: flex;
+  justify-content: space-between; */
+  align-items: center;
+  z-index: 2;
+}
+
+a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.nav_links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+/* burger */
+
+.burger {
+  display: none;
+}
+.burger div {
+  height: 2px;
+  width: 23px;
+  margin: 5px;
+  background-color: azure;
+  transition: all 0.3s ease;
+}
+/* for mobile nav */
+@media screen and (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav_links {
+    position: absolute;
+    left: 0;
+    top: 20vh;
+    background-color: rgb(132, 0, 255);
+    height: 30%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.2s ease-in;
+    z-index: 3;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  .nav_links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+}
+/* navlinks animation */
+
+.nav_active {
+  transform: translateX(30%);
+}
+
+/* animation for links */
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* burger animation */
+
+.cross .stick1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.cross .stick2 {
+  opacity: 0;
+}
+.cross .stick3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* 2nd part text and image  */
+
+/* .front div */
+.front {
+  flex-wrap: wrap;
+  padding: 10% 10%;
+  z-index: 1;
+}
+
+.item {
+  width: 50%;
+}
+/* 1st child and allof the text classes */
+.text {
+  padding-top: 5%;
+  text-align: center;
+  z-index: 2;
+}
+.text h1 {
+  text-align: left;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 6rem;
+}
+.text p {
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin: 5% 0;
+}
+/* first section card and values for very card */
+.card {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+.card img {
+  width: 100%;
+}
+/* comic card */
+
+.c1 img {
+  border-radius: 2rem;
+  height: 80%;
+}
+/* svg waves */
+.waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.waves svg {
+  position: relative;
+  display: block;
+  width: calc(200% + 1.3px);
+  height: 200px;
+  transform: rotateY(180deg);
+}
+
+.waves .shape-fill {
+  fill: #edeef7;
+}
+
+/* media query for front for mobile */
+@media screen and (max-width: 1200px) {
+  .item {
+    width: 100%;
+  }
+
+  .text h1 {
+    text-align: center;
+  }
+  .text p {
+    text-align: center;
+  }
+  .card {
+    align-items: center;
+  }
+
+  .waves svg {
+    width: calc(200% + 1.3px);
+    height: 200px;
+  }
+}
+
+/* second part */
+#second_part {
+  padding: 10% 10%;
+  color: black;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* text part */
+.t2 {
+  padding: 0 3% 0 0;
+}
+/* card part */
+
+.c2 img {
+  width: 80%;
+}
+
+/* third section */
+#third_part {
+  padding: 10% 10%;
+  color: black;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.c3 img {
+  width: 80%;
+}
+/* price tagline */
+.price_heading {
+  text-align: center;
+  line-height: 2;
+  color: #000000;
+  padding: 0 10%;
+}
+.price_heading h1 {
+  font-size: 2rem;
+}
+.price_heading p {
+  font-size: 1.3rem;
+}
+
+/* price section */
+#price {
+  color: #000000;
+  padding: 10% 10%;
+  flex-wrap: wrap;
+}
+.c4 {
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 3;
+  width: 40%;
+}
+.c4 span {
+  font-size: 4rem;
+}
+.c4 ul li {
+  list-style: none;
+}
+/* media queries for price section */
+@media screen and (max-width: 1200px) {
+  #price {
+    justify-content: space-around;
+  }
+
+  .c4 {
+    width: 60%;
+    margin: 10%;
+  }
+}
+
+/* faq section */
+#faq {
+  color: #000000;
+  padding: 0 10%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+/* faq heading */
+.faq_heading {
+  font-size: 3rem;
+  padding: 10% 0;
+  text-align: center;
+}
+
+/* faq boxes */
+.faq_boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 0 0 5%;
+  width: 100%;
+}
+.faq_box {
+  border: 1px solid black;
+  border-radius: 1.5rem;
+  padding: 3%;
+  margin: 2% 0;
+  width: 100%;
+}
+
+/* footer */
+#footer {
+  background: linear-gradient(
+    92.54deg,
+    #4282fe 0.59%,
+    #387bff 0.6%,
+    #618dff 51.62%,
+    #9bcfff 106.4%
+  );
+  padding: 2% 10%;
+}
+/* keepking no list style */
+#footer li {
+  list-style: none;
+}
+/* targeting the footer */
+.f1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  opacity: 3;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 2;
+}
