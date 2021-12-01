@@ -388,6 +388,7 @@ a:hover {
     #618dff 51.62%,
     #9bcfff 106.4%
   );
+  color:var(--grey);
   padding: 4% 10%;
 }
 
