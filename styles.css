@@ -432,6 +432,7 @@ a:hover {
 }
 /* faq heading */
 .faq_heading {
+  text-align:center;
   font-size: 2rem;
   padding: 5% 0;
 }
