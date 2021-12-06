@@ -541,7 +541,7 @@ a:hover {
   width: 30%;
 }
 .footer-logo {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 .footer-logo img {
   width: 17%;
@@ -561,6 +561,7 @@ a:hover {
 
   .links,
   .socials {
+    font-size: 0.8rem;
     flex-direction: row;
     justify-content: space-between;
     padding: 2% 0;
