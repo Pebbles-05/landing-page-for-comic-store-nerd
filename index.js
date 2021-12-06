@@ -45,3 +45,5 @@ const answer_wrap = ()=>{
     
     // caling faq functions
     answer_wrap();
+
+    
