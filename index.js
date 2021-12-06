@@ -2,7 +2,8 @@
 const navwrap= ()=>{
     const burger= document.querySelector('.burger');
     const nav= document.querySelector('.nav_links');
-    const nav_links =document.querySelectorAll('.nav_links li');
+    const nav_links =document.querySelectorAll('.nav_links li ');
+    const nav_atags = document.querySelectorAll('.nav_links li a');
 // burger toggle
     burger.addEventListener('click',()=>{
         nav.classList.toggle('nav_active');
@@ -17,8 +18,17 @@ const navwrap= ()=>{
             
             
         })
-        //burger cross animation
+//burger cross animation
         burger.classList.toggle('cross');
+
+// function for closing the nav when a link is clicked
+        nav_atags.forEach((atag)=>{
+            atag.addEventListener('click',()=>{
+               burger.click();
+            })
+    
+        })
+        
 
     })
 }
@@ -43,7 +53,7 @@ const answer_wrap = ()=>{
     
     }
     
-    // caling faq functions
+// caling faq functions
     answer_wrap();
 
     
