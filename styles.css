@@ -1,3 +1,5 @@
+/* google font imports */
+
 @import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap");
 
 /* mail html */
@@ -6,7 +8,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --purple: #554dde;
 
@@ -47,7 +51,7 @@ section {
   background-color: var(--purple);
   color: var(--grey);
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   display: inline-block;
   cursor: pointer;
   font-size: 1rem;
@@ -61,11 +65,10 @@ section {
 /*  navbar */
 nav {
   padding: 5% 10%;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
 }
 
 a {
@@ -80,7 +83,7 @@ a:hover {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 50%;
 }
 
 /* burger */
@@ -121,7 +124,7 @@ a:hover {
     align-items: center;
     transform: translateX(-100%);
     transition: transform 0.2s ease-in;
-    z-index: 3;
+    z-index: 6;
     overflow: hidden;
     border-radius: 25px;
   }
@@ -169,7 +172,6 @@ a:hover {
 .front {
   flex-wrap: wrap;
   padding: 10% 10%;
-  z-index: 1;
 }
 
 .item {
@@ -180,7 +182,6 @@ a:hover {
 .text {
   padding-top: 5%;
   text-align: center;
-  z-index: 2;
 }
 .text h1 {
   text-align: left;
@@ -212,8 +213,8 @@ a:hover {
 /* comic card */
 
 .c1 img {
-  border: 3px solid black;
-  border-radius: 2rem;
+  border: 5px solid var(--black);
+  border-radius: 25px;
   height: 80%;
   width: 70%;
 }
@@ -290,7 +291,7 @@ a:hover {
 
 /* carousal part */
 #carousal {
-  margin: 10% 10%;
+  margin: 0 10%;
   overflow: hidden;
   background-color: var(--grey);
   color: var(--black);
@@ -432,7 +433,7 @@ a:hover {
 }
 /* faq heading */
 .faq_heading {
-  text-align:center;
+  text-align: center;
   font-size: 2rem;
   padding: 5% 0;
 }
