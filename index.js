@@ -56,4 +56,37 @@ const answer_wrap = ()=>{
 // caling faq functions
     answer_wrap();
 
+
+    // fading in of sections on scroll
+    const fade_targets=document.querySelectorAll('.fade_target');
+    const btt=document.querySelector('.btt');
     
+    // options for observer
+    const fade_options={
+         threshold: 0.2,
+         }
+    //observer function
+    const fadeinonscroll= new IntersectionObserver((item,fadeinonscroll)=>{
+
+        item.forEach(item=>{
+            if(!item.isIntersecting){
+                return;
+            }
+            else{
+                item.target.classList.add('fade_active');
+                btt.classList.add('btt_active');
+
+                fadeinonscroll.unobserve(item);
+            }
+        })
+
+    },fade_options);
+    //targeting sections to observe
+
+    fade_targets.forEach(target=>{
+        fadeinonscroll.observe(target);
+    })
+    
+
+
+

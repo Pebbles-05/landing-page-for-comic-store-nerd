@@ -21,6 +21,8 @@ html {
 
 body {
   background: var(--grey);
+  position: relative;
+  font-family: "Fuzzy Bubbles", cursive;
 }
 
 /* premade class and variables */
@@ -30,7 +32,6 @@ body {
 }
 
 section {
-  font-family: "Fuzzy Bubbles", cursive;
   position: relative;
 }
 
@@ -75,6 +76,7 @@ nav {
 a {
   text-decoration: none;
   color: var(--grey);
+  cursor: pointer;
 }
 a:hover {
   color: var(--black);
@@ -91,6 +93,7 @@ a:hover {
 
 .burger {
   display: none;
+  cursor: pointer;
 }
 .burger div {
   height: 2px;
@@ -310,7 +313,7 @@ a:hover {
   flex-direction: row;
   overflow: hidden;
   width: 500%;
-  animation: slider 10s infinite;
+  animation: slider 20s infinite;
 }
 .image {
   height: 100%;
@@ -569,4 +572,34 @@ a:hover {
     padding: 2% 0;
     width: 100%;
   }
+}
+
+/* lazy loading for sections */
+.fade_target {
+  opacity: 0;
+  transform: translateY(20%);
+  transition: all 0.5s ease-in;
+}
+.fade_target.fade_active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* back to top button */
+.btt {
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  padding: 1%;
+  position: fixed;
+  z-index: 10;
+  bottom: 2%;
+  right: 2%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+.btt a {
+  color: var(--purple);
+}
+.btt.btt_active {
+  opacity: 0.5;
 }
