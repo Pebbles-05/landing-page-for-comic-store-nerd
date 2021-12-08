@@ -62,8 +62,12 @@ const answer_wrap = ()=>{
     const btt=document.querySelector('.btt');
     
     // options for observer
-    const fade_options={
-         threshold: 0.2,
+    const fadeoptions={
+        root:null,
+        rootmargin:"0px",
+        threshold: 0.3
+         
+         
          }
     //observer function
     const fadeinonscroll= new IntersectionObserver((item,fadeinonscroll)=>{
@@ -80,7 +84,7 @@ const answer_wrap = ()=>{
             }
         })
 
-    },fade_options);
+    },fadeoptions);
     //targeting sections to observe
 
     fade_targets.forEach(target=>{
@@ -88,5 +92,5 @@ const answer_wrap = ()=>{
     })
     
 
-
+    
 

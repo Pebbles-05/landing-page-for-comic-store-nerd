@@ -22,6 +22,7 @@ html {
 body {
   background: var(--grey);
   position: relative;
+  overflow-x: hidden;
   font-family: "Fuzzy Bubbles", cursive;
 }
 
@@ -105,9 +106,6 @@ a:hover {
 
 /* for mobile nav */
 @media screen and (max-width: 900px) {
-  body {
-    overflow-x: hidden;
-  }
   .logo {
     text-align: center;
   }
@@ -577,12 +575,12 @@ a:hover {
 /* lazy loading for sections */
 .fade_target {
   opacity: 0;
-  transform: translateY(20%);
+  transform: translateX(-20%);
   transition: all 0.5s ease-in;
 }
 .fade_target.fade_active {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 /* back to top button */
