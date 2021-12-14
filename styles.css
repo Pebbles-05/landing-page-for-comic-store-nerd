@@ -505,6 +505,9 @@ a:hover {
   .answers {
     overflow: auto;
   }
+  #faq{
+    text-align:center;
+  }
 }
 
 /* footer */
