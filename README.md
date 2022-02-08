@@ -1,7 +1,7 @@
 
 # landing-page-for-comic-store-nerd
 
-A single page website for a demo comic book store made by  HTML5, CSS, javaScript.
+A single page website for a demo comic book store made by  HTML 5, CSS, javaScript.
 
 No Libraries have been used to make this website.
 
