@@ -12,4 +12,6 @@ No Libraries have been used to make this website.
 
 https://pebbles-05.github.io/landing-page-for-comic-store-nerd/
 
+![demogif](images/nerd_gif.gif)
+
 
